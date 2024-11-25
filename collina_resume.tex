@@ -1,13 +1,10 @@
 %-------------------------
 % Rezume, a latex resume template for developers
-% Author : Nanu Panchamurthy
+% Author : Jared Collina and Nanu Panchamurthy
 % Based off of: https://github.com/sb2nov/resume
 % License : MIT
 
-% Hope this resume template helps you land an awesome job. If you found this helpful, please consider starring the github repo here, .
 %-------------------------
-
-
 
 %------------PACKAGES----------------
 \documentclass[a4paper,11pt]{article}
@@ -67,7 +64,6 @@
 \raggedbottom{} % makes all pages the height of current page, no extra vertical space added
 \raggedright{} % makes all pages the width of current page, no extra horizontal space added
 %------------------------------------------
-
 
 %--------SECTIONING COMMANDS---------
 % \titleformat{<command>}
@@ -162,14 +158,14 @@
 % Make sure all the details are correct, you can add more links in the first row of second column if needed
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Huge Jane Doe \vspace{2pt}} & % row = 1, col = 1
-  Location: Anycity, Anystate, Anycountry \\ % row = 1, col = 2
-  \href{https://jane-doe.com}{\uline{jane-doe.com}} $|$ % row = 2, col = 1
-  \href{https://linkedin.com/in/jane-doe}{\uline{LinkedIn}} $|$ % row = 2, col = 1
-  \href{https://github.com/jane-doe}{\uline{GitHub}} $|$ % row = 2, col = 1
-  \href{https://leetcode.com/jane-doe}{\uline{Leetcode}} & % row = 2, col = 1
-  Email: \href{mailto:jane.doe@anymail.com}{\uline{jane.doe@anymail.com}} $|$ % row = 2, col = 2
-  Mobile: 5555555555 \\ % row = 2, col = 2
+  \textbf{\Huge Jared Collina \vspace{2pt}} & % row = 1, col = 1
+  Philadelphia, PA \\ % row = 1, col = 2
+ % \href{https://jane-doe.com}{\uline{jane-doe.com}} $|$ % row = 2, col = 1
+  \href{https://linkedin.com/in/jaredcollina}{\uline{LinkedIn}} $|$ % row = 2, col = 1
+  \href{https://github.com/jcollina}{\uline{GitHub}} $|$ % row = 2, col = 1
+ % \href{https://leetcode.com/jane-doe}{\uline{Leetcode}} & % row = 2, col = 1
+  Email: \href{mailto:jscollina@gmail.com}{\uline{jscollina@gmail.com}} $|$ % row = 2, col = 2
+  Mobile: (202)360-8487 \\ % row = 2, col = 2
 \end{tabular*}
 %--------------------------------------------
 
@@ -177,23 +173,21 @@
 %-----------SUMMARY--------------------------
 % Keep this short, simple and straigth to point
 
-\section{Full Stack Developer}
-\small{
-  I am a highly skilled web developer with over \textbf{3 years of experience} in \textbf{HTML, CSS, JavaScript, and PHP}. I have knowledge of popular frameworks such as \textbf{React, Angular, and Vue.js} and experience with REST APIs and MVC frameworks.
-}
+\section{Ph.D. Level Data Scientist}
+\small{Highly analytical and quantitatively skilled data scientist with a Ph.D. in Neuroscience and a Master's in Statistics. Experienced in modeling decision-making behavior, reinforcement learning, and Bayesian statistics, with a strong background in machine learning, psychophysics, and auditory neuroscience. Proficient in Python and MySQL, with expertise in designing experiments, analyzing complex datasets, and developing actionable insights from real-world data.}
 %--------------------------------------------
 
 
 %--------------SKILLS------------------------
 % Add or remove resumeSectionTypes according to your needs
 
-\section{Technical Skills}
+\section{Skills}
   \resumeHeadingListStart{}
-    \resumeSectionType{Languages}{:}{JavaScript, PHP, Java, HTML, CSS}
-    \resumeSectionType{Frameworks}{:}{React.js, Angular, Express, Node.js}
-    \resumeSectionType{Libraries}{:}{Material, Redux, React Router}
-    \resumeSectionType{Databases}{:}{MongoDB, PostgreSQL}
-    \resumeSectionType{Dev Tools}{:}{Visual Studio Code, Git, Gitlab}
+    \resumeSectionType{Languages}{:}{Python scientific stack, Jupyter, Matlab, R, MySQL, PyTorch}
+    \resumeSectionType{Expertise}{:}{Scientific Communication, Data Mining, Statistical Inference, Data Visualization, Machine Learning}
+    %\resumeSectionType{Libraries}{:}{Material, Redux, React Router}
+    %\resumeSectionType{Databases}{:}{MongoDB, PostgreSQL}
+    %\resumeSectionType{Dev Tools}{:}{Visual Studio Code, Git}
   \resumeHeadingListEnd{}
 %--------------------------------------------
 
@@ -203,25 +197,28 @@
 
 \section{Experience}
 \resumeHeadingListStart{}
-  \resumeQuadHeading{Web Developer}{Apr 2022 -- Present}
-  {Anycompany}{Remote -- AnyCity, Anystate, Anycountry}
+  \resumeQuadHeading{Neuroscience Ph.D. Researcher}{Aug 2018 -- Present}
+  {University of Pennsylvania}{Philadelphia, PA}
     \resumeItemListStart{}
-      \resumeItem{Designed and developed dynamic and responsive websites using \textbf{HTML, CSS, JavaScript, and PHP}}
-      \resumeItem{Worked with \textbf{REST APIs} to retrieve and display data from databases}
-      \resumeItem{Improved \textbf{website performance} and speed through optimization techniques by \textbf{55\%}}
+	\resumeItem{Created an \textbf{integrated cloud-based analysis pipeline using AWS and Python} to synchronize neural data from multi-channel arrays with behavioral data, streamlining the data extraction, cleaning, and transformation processes.}
+      \resumeItem{Developed an \textbf{open-source Matlab toolbox} as part of a multidisciplinary team that was used by other research labs to model image formation in the tree shrew visual system (\uline{\href{https://t.ly/qxoR4}{Code}}).}
+      \resumeItem{Led a team of researchers in implementing time-series clustering alongside a \textbf{custom reinforcement learning model in Python} to study the role of the primary auditory cortex in the learning of auditory categories (\uline{\href{https://t.ly/vpwu0}{Paper}}, \uline{\href{https://t.ly/ndyl0}{Code}}).}
+      \resumeItem{Showed that variability in how humans disregard irrelevant auditory information can be captured by a \textbf{Bayesian graphical model}, yielding a tool for studying how humans navigate complex auditory environments (\uline{\href{https://t.ly/sLwHc}{Paper}}).}
+	\resumeItem{Mentored graduate students and post-doctoral researchers in \textbf{data visualization and computational modeling}, and served as TA for a 30-student undergraduate introduction to MATLAB course.}
     \resumeItemListEnd{}
 
-  \resumeQuadHeading{Backend Developer}{Aug 2021 -- Nov 2022}
-  {Anycompany}{Anycity, Anystate, Anycountry}
+  \resumeQuadHeading{Statistics M.A. Researcher}{Aug 2019 -- Present}
+  {University of Pennsylvania}{Philadelphia, PA}
     \resumeItemListStart{}
-      \resumeItem{Worked with \textbf{MVC frameworks} to develop robust and scalable backends}
-      \resumeItem{Troubleshot and \textbf{fixed bugs} and issues in the backend to ensure \textbf{smooth operation} of the applications}
+      \resumeItem{Collaborated with a multidisciplinary team to design and implement a specialized reinforcement learning model in Python tailored to optimize maze navigation within a dynamic environment.}
     \resumeItemListEnd{}
 
-  \resumeQuadHeadingChild{Backend Developer Intern}{Jan 2021 -- Aug 2021}
+  \resumeQuadHeading{Engineering Research Intern}{May 2015 -- Aug 2015}
+  {AnthroTronix} {Silver Spring, MD}
     \resumeItemListStart{}
-      \resumeItem{Assisted senior web developers in the design and development of websites using \textbf{HTML, CSS, and JavaScript}}
+      \resumeItem{Organized and analyzed data from human subject research. My findings were used to optimize a battery of tests that, combined, were able to diagnose signs of early onset PTSD.}
     \resumeItemListEnd{}
+
 \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -231,43 +228,50 @@
 
 \section{Education}
   \resumeHeadingListStart{}
-    \resumeQuadHeading{University of Anystate}{Anycity, Anystate, Anycountry}
-    {Bachelor of Science in Computer Science}{Jan 2016 -- Dec 2020}
+    \resumeQuadHeading{University of Pennsylvania}{Philadelphia, PA}
+ {Ph.D. in Neuroscience}{Aug 2018 -- Feb 2025 (Expected)}
+    \resumeQuadHeading{University of Pennsylvania}{Philadelphia, PA}
+ {M.A. in Statistics}{Aug 2019 -- Feb 2025 (Expected)}
+    \resumeQuadHeading{Haverford College}{Haverford, PA}
+ {B.S. in Physics}{Aug 2014 -- May 2018}
+
   \resumeHeadingListEnd{}
 %---------------------------------------------
-
-
-%-----------PROJECTS--------------------------
-% Use resumeQuadHeading if four elements are feasible (ex: demo video link), else use resumeTrioHeading. Keep the bullet points simple and concise and try to cover wide variety of skills you have used to build these projects
-
-\section{Projects}
-  \resumeHeadingListStart{}
-    \resumeTrioHeading{\href{https://project1.com}{\uline{Project 1}}}{React.js, Redux, PHP, MySQL Git}{\href{https://proect1.com/source-code/}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{Designed and developed a clean and modern website using \textbf{HTML, CSS, and JavaScript}}
-        \resumeItem{Optimized website for \textbf{speed and user experience}}
-        \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
-        \resumeItem{Deployed on GitHub pages via GitHub Actions}
-      \resumeItemListEnd{}
-
-      \resumeTrioHeading{Project 2}{Node.js, Express, JavaScript, Git}{\href{https:project2.com/source-code}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
-        \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
-      \resumeItemListEnd{}
-  \resumeHeadingListEnd{}
-%--------------------------------------------
-
 
 %----------------OTHERS----------------------
 % You can add your acheivements, accolades, certifications etc. here.
 
-\section{Certifications}
+\section{Leadership}
   \resumeItemListStart{}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{Certified Web Developer by the W3C}}}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{Microsoft Certified: Azure Developer Associate}}}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{AWS Certified Developer - Associate}}}
+    \resumeItem{\textbf{Comp. Neuro Section Chief, Brains in Briefs} (training Ph.D. students to make technical literature more accessible)}
+    \resumeItem{\textbf{Founder, Biomedical Graduate Studies Program Club Soccer} (school-funded soccer club accessible to all graduate students)}
+    \resumeItem{\textbf{Volunteer Coach, Philadelphia Open Soccer} (free soccer for low-income youth in West Philadelphia)}
+    \resumeItem{\textbf{Seminar Committee Member, Computational Neuroscience Initiative} (Organized interdisciplinary seminars attended by dozens of community members) }
   \resumeItemListEnd{}
 %--------------------------------------------
+
+%-----------PROJECTS--------------------------
+% Use resumeQuadHeading if four elements are feasible (ex: demo video link), else use resumeTrioHeading. Keep the bullet points simple and concise and try to cover wide variety of skills you have used to build these projects
+%
+%\section{Projects}
+%  \resumeHeadingListStart{}
+%    \resumeTrioHeading{\href{https://project1.com}{\uline{Project 1}}}{React.js, Redux, PHP, MySQL Git}{\href{https://proect1.com/source-code/}{\uline{Source Code}}}
+%      \resumeItemListStart{}
+%        \resumeItem{Designed and developed a clean and modern website using \textbf{HTML, CSS, and JavaScript}}
+%        \resumeItem{Optimized website for \textbf{speed and user experience}}
+%        \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
+%        \resumeItem{Deployed on GitHub pages via GitHub Actions}
+%      \resumeItemListEnd{}
+%
+%      \resumeTrioHeading{Project 2}{Node.js, Express, JavaScript, Git}{\href{https:project2.com/source-code}{\uline{Source Code}}}
+%      \resumeItemListStart{}
+%        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
+%        \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
+%      \resumeItemListEnd{}
+%  \resumeHeadingListEnd{}
+%--------------------------------------------
+
+
+
 
 \end{document}
